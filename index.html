@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selfwork Funzioni 4</title>
+</head>
+<body>
+
+    <script>
+        function isPalindroma(str) {
+            let pulita = str.replace(/\W/g, "").toLowerCase();
+            let invertita = pulita.split("").reverse().join("");
+
+            return pulita === invertita;
+        }
+
+        console.log(isPalindroma("i topi non avevano nipoti"));
+        console.log(isPalindroma("Anna"));
+        console.log(isPalindroma("ciao mondo"));
+    </script>
+</body>
+</html>
